@@ -89,17 +89,17 @@ class ShowUser extends Component {
             </Typography>
             <PersonICon className={classes.icon} />
             <Typography variant="headline" color="inherit">
-              {data.username}
+              {data.name}
             </Typography>
-            <Avatar className={`${classes.avatarImg} ${classes.avatar}`}>
-              {data.public_repos}
-            </Avatar>
             <Chip
               label="Repository Count"
               className={classes.chip}
               variant="default"
               color="secondary"
             />
+            <Avatar className={`${classes.avatarImg} ${classes.avatar}`}>
+              {data.public_repos}
+            </Avatar>
           </Toolbar>
         </AppBar>
 
